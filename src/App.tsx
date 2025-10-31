@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import Login from './components/Login';
 import MainPage from './components/MainPage';
 import Leaderboard from './components/Leaderboard';
-import QuizPage from './components/QuizPage';
+import {QuizPage} from './components/QuizPage';
 
 type Page = 'main' | 'leaderboard' | 'quiz';
 

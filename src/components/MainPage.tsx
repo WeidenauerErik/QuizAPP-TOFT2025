@@ -39,7 +39,7 @@ export default function MainPage({
   const loadCompletedQuizzes = async () => {
     setIsLoading(true);
     try {
-      const response = await fetch(`http://localhost/getCompletedQuizzes?visitor_id=${user.visitor_id}`);
+      const response = await fetch(`https://localhost/getCompletedQuizzes?visitor_id=${user.visitor_id}`);
       if (response.ok) {
         const data = await response.json();
         setCompletedQuizzes(data.quizzes || []);
